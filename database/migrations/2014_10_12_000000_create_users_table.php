@@ -14,7 +14,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->bigInteger('salery');
+            $table->bigInteger('salery')->nullable();
             $table->boolean('is_admin')->default(false);
             $table->enum('status', ['active', 'inactive'])->default('active');
             $table->rememberToken();
