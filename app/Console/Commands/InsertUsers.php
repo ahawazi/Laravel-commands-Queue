@@ -13,8 +13,8 @@ class InsertUsers extends Command
 
     public function handle()
     {
-        $batchSize = 10000;
-        $totalBatches = 10000;
+        $batchSize = 1000;
+        $totalBatches = 1000;
 
         User::withoutEvents(function () use ($batchSize, $totalBatches) {
 
